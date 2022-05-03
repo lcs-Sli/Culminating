@@ -131,9 +131,8 @@ func drawArrow() {
 
 //Move more to to the middle
 turtle.penUp()
-turtle.forward(steps: 5 * scale)
 turtle.left(by: 90)
-turtle.forward(steps: 5 * scale)
+turtle.forward(steps: 6 * scale)
 turtle.right(by: 90)
 
 //Use a loop
@@ -142,7 +141,7 @@ for _ in 1...5 {
     drawArrow()
     //2.Get into position to draw the next arrow
     turtle.penUp()
-    turtle.forward(steps: 5 * scale)
+    turtle.forward(steps: 6 * scale)
     turtle.penDown()
 }
 
