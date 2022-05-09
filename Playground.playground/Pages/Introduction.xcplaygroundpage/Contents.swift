@@ -7,8 +7,8 @@
  
  Set the size of your desired canvas by adjusting the constants on lines 10 and 11.
  */
-let preferredWidth = 300
-let preferredHeight = 600
+let preferredWidth = 500
+let preferredHeight = 500
 /*:
  ## Required code
  
@@ -25,18 +25,214 @@ let canvas = Canvas(width: preferredWidth, height: preferredHeight)
 
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
-/*:
- ## Add your code
- 
- Beginning on line 38, write a meaningful comment.
- 
- You can remove the code on line 39 and begin writing your own code.
- 
- [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
- */
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+
+
+// Create a turtle that will draw upon the canvas
+let turtle = Tortoise(drawingUpon: canvas)
+
+
+//Draw a grid
+canvas.drawAxes(withScale: true, by: 20, color: .black)
+
+//Where is the turtle?
+turtle.currentPosition()
+
+//Set Scale
+let scale = 20
+
+//Draw one shape
+//Where are we
+turtle.drawSelf()
+turtle.currentPosition()
+turtle.currentHeading()
+
+//Move to the right position
+turtle.penUp() //So it doesn't draw a line
+turtle.forward(steps: 4 * scale)
+turtle.left(by: 90)
+turtle.forward(steps: 6 * scale)
+turtle.right(by: 90)
+turtle.penDown()
+
+//Draw a line
+turtle.penDown()
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Down 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 2
+turtle.left(by: 90)
+turtle.forward(steps: 2 * scale)
+turtle.drawSelf()
+
+//Down 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and left 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Down 2
+turtle.left(by: 90)
+turtle.forward(steps: 2 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Down 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 2
+turtle.right(by: 90)
+turtle.forward(steps: 2 * scale)
+turtle.drawSelf()
+
+//Up 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Down 2
+turtle.left(by: 90)
+turtle.forward(steps: 2 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Up 3
+turtle.right(by: 90)
+turtle.forward(steps: 3 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Up 1
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 3
+turtle.left(by: 90)
+turtle.forward(steps: 3 * scale)
+turtle.drawSelf()
+
+//Up 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Up 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Up 1
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Down 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Down 1
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Turn and forward 1
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+//Up 1
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+turtle.drawSelf()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*:
  ## Show the Assistant Editor
