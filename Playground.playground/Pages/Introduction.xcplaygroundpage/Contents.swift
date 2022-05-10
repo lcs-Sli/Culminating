@@ -41,11 +41,13 @@ turtle.currentPosition()
 //Set Scale
 let scale = 20
 
+//FUNCTIONS
 //Draw one shape
 //Where are we
-turtle.drawSelf()
 turtle.currentPosition()
 turtle.currentHeading()
+//turtle.drawSelf()
+
 
 //Move to the right position
 turtle.penUp() //So it doesn't draw a line
@@ -55,146 +57,236 @@ turtle.forward(steps: 6 * scale)
 turtle.right(by: 90)
 turtle.penDown()
 
+turtle.currentPosition()
+turtle.currentHeading()
 //Draw a line
 turtle.penDown()
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Down 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 2
 turtle.left(by: 90)
 turtle.forward(steps: 2 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Down 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and left 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Down 2
 turtle.left(by: 90)
 turtle.forward(steps: 2 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Down 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 2
 turtle.right(by: 90)
 turtle.forward(steps: 2 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Up 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Down 2
 turtle.left(by: 90)
 turtle.forward(steps: 2 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Up 3
 turtle.right(by: 90)
 turtle.forward(steps: 3 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Up 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 3
 turtle.left(by: 90)
 turtle.forward(steps: 3 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Up 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Up 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Up 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Down 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Down 1
 turtle.right(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Turn and forward 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Up 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
 turtle.drawSelf()
+turtle.currentPosition()
+turtle.currentHeading()
 
+//Make the turtle go back to where it starts
+turtle.penUp()
+turtle.right(by: 90)
+turtle.currentHeading()
+
+
+
+
+
+//Draw the next black part
+turtle.penUp()
+turtle.forward(steps: 1 * scale)
+turtle.penDown()
+
+//Forward 3
+turtle.forward(steps: 3 * scale)
+
+//Turn and Go down
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+
+//Turn and go forward
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+
+//Turn and go up
+turtle.left(by: 90)
+turtle.forward(steps: 3 * scale)
+
+//Turn and go forward
+turtle.left(by: 90)
+turtle.forward(steps: 3 * scale)
+
+//Turn and go up
+turtle.right(by: 90)
+turtle.forward(steps: 1 * scale)
+
+//Turn and go forward
+turtle.left(by: 90)
+turtle.forward(steps: 1 * scale)
+
+//Turn and go down
+turtle.left(by: 90)
+turtle.forward(steps: 3 * scale)
+turtle.drawSelf()
+
+//Go back to original point
+turtle.left(by: 90)
+turtle.drawSelf()
+
+//Draw next black part
+turtle.penUp()
+turtle.forward(steps: 4 * scale)
+turtle.left(by: 90)
+turtle.forward(steps: 2 * scale)
+turtle.drawSelf()
+
+
+
+
+//Where are we
+//turtle.drawSelf()
+turtle.currentPosition()
+turtle.currentHeading()
+    
+//Correct for position
+turtle.penUp()
+turtle.left(by: 90)
+turtle.forward(steps: 1)
+turtle.right(by: 90)
+turtle.penDown()
+    
+// Correct for vertical position
+turtle.penUp()
+turtle.right(by: 180)
+turtle.forward(steps: 7)
+turtle.left(by: 180)
+turtle.penDown()
+    
+// Correct heading
+turtle.right(by: 90)
+    
+//Where are we
+//turtle.drawSelf()
+turtle.currentPosition()
+turtle.currentHeading()
 
 
 
