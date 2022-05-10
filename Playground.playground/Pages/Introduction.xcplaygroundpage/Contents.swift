@@ -59,6 +59,9 @@ turtle.penDown()
 
 turtle.currentPosition()
 turtle.currentHeading()
+func FINALFUNC(){
+func FINAAL(){
+func Shape(){
 //Draw a line
 turtle.penDown()
 turtle.forward(steps: 1 * scale)
@@ -200,15 +203,15 @@ turtle.forward(steps: 1 * scale)
 turtle.drawSelf()
 turtle.currentPosition()
 turtle.currentHeading()
+}
+
+//First black part
+Shape()
 
 //Make the turtle go back to where it starts
 turtle.penUp()
 turtle.right(by: 90)
 turtle.currentHeading()
-
-
-
-
 
 //Draw the next black part
 turtle.penUp()
@@ -257,36 +260,36 @@ turtle.forward(steps: 4 * scale)
 turtle.left(by: 90)
 turtle.forward(steps: 2 * scale)
 turtle.drawSelf()
-
-
-
-
-//Where are we
-//turtle.drawSelf()
-turtle.currentPosition()
 turtle.currentHeading()
-    
+
+   
 //Correct for position
-turtle.penUp()
-turtle.left(by: 90)
 turtle.forward(steps: 1)
-turtle.right(by: 90)
-turtle.penDown()
-    
-// Correct for vertical position
-turtle.penUp()
-turtle.right(by: 180)
-turtle.forward(steps: 7)
-turtle.left(by: 180)
-turtle.penDown()
-    
+
+
 // Correct heading
 turtle.right(by: 90)
+
+//The third black part
+turtle.left(by: 180)
+turtle.forward(steps: -1*scale)
+Shape()
+    turtle.penUp()
+    turtle.forward(steps: 2*scale)
+    turtle.left(by: 90)
+    turtle.penDown()
+}
+
+for i in 1...2{
+    FINAAL()
     
-//Where are we
-//turtle.drawSelf()
-turtle.currentPosition()
-turtle.currentHeading()
+//2.Get into position to draw the next shape
+turtle.penUp()
+turtle.forward(steps: 4 * scale)
+}
+//
+}
+FINALFUNC()
 
 
 
