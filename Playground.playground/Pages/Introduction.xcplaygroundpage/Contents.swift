@@ -262,20 +262,19 @@ turtle.forward(steps: 2 * scale)
 //turtle.drawSelf()
 turtle.currentHeading()
 
-   
 //Correct for position
 turtle.forward(steps: 1)
-
 
 // Correct heading
 turtle.right(by: 90)
 
 //The third black part
 turtle.left(by: 180)
-turtle.forward(steps: -1*scale)
+turtle.forward(steps: -1*scale)//flip vertically
 Shape()
+    
     turtle.penUp()
-    turtle.forward(steps: 2*scale)
+    turtle.forward(steps: 2*scale+1)
     turtle.left(by: 90)
     turtle.penDown()
 }
