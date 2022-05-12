@@ -40,7 +40,7 @@ turtle.currentPosition()
 
 //Set Scale
 let scale = 20
-
+canvas.highPerformance=true
 //FUNCTIONS
 //Draw one shape
 //Where are we
@@ -287,11 +287,35 @@ for i in 1...2{
 turtle.penUp()
 turtle.forward(steps: 4 * scale)
 }
-//
+    
+//Correct position for second line
+
+turtle.right(by: 180)
+turtle.forward(steps: 20 * scale)
+
+turtle.right(by: 90)
+turtle.forward(steps: 12 * scale-2)
+turtle.right(by: 90)
+turtle.penDown()
+
+    
+//Draw the second line
+for i in 1...2{
+        FINAAL()
+        
+//2.Get into position to draw the next shape
+    turtle.penUp()
+    turtle.forward(steps: 4 * scale)
+    }
+        
+
+
+
+
 }
 FINALFUNC()
 
-
+canvas.highPerformance=false
 
 
 
