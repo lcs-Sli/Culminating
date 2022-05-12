@@ -323,11 +323,22 @@ for i in 1...5{
 //2.Get into position to draw the next shape
     turtle.penUp()
     turtle.forward(steps: 4 * scale)
-    
-    
+}
+    turtle.right(by: 180)
+    turtle.forward(steps: 50 * scale)
+    turtle.right(by: 90)
+    turtle.forward(steps: 12 * scale-2)
+    turtle.right(by: 90)
+    turtle.penDown()
 
-        
-    }
+    //Draw the third line
+for i in 1...5{
+            FINAAL()
+            
+    //2.Get into position to draw the next shape
+        turtle.penUp()
+        turtle.forward(steps: 4 * scale)
+}
         
 
 
@@ -390,4 +401,4 @@ turtle.copySVGToClipboard()
  
  ![source_control](source-control.png "Source Control")
  */
-}
+
