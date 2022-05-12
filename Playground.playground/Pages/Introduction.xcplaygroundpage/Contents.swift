@@ -35,11 +35,9 @@ let turtle = Tortoise(drawingUpon: canvas)
 //Draw a grid
 canvas.drawAxes(withScale: true, by: 20, color: .black)
 
-//Where is the turtle?
-turtle.currentPosition()
 
 //Set Scale
-let scale = 20
+let scale = 10
 canvas.highPerformance=true
 //FUNCTIONS
 //Draw one shape
@@ -59,7 +57,10 @@ turtle.penDown()
 
 turtle.currentPosition()
 turtle.currentHeading()
-func FINALFUNC(){
+
+//Where is the turtle?
+turtle.currentPosition()
+
 func FINAAL(){
 func Shape(){
 //Draw a line
@@ -248,18 +249,17 @@ turtle.forward(steps: 1 * scale)
 //Turn and go down
 turtle.left(by: 90)
 turtle.forward(steps: 3 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 
 //Go back to original point
 turtle.left(by: 90)
-turtle.drawSelf()
+//turtle.drawSelf()
 
-//Draw next black part
 turtle.penUp()
 turtle.forward(steps: 4 * scale)
 turtle.left(by: 90)
 turtle.forward(steps: 2 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 turtle.currentHeading()
 
    
@@ -280,7 +280,7 @@ Shape()
     turtle.penDown()
 }
 
-for i in 1...2{
+for i in 1...5{
     FINAAL()
     
 //2.Get into position to draw the next shape
@@ -291,8 +291,7 @@ turtle.forward(steps: 4 * scale)
 //Correct position for second line
 
 turtle.right(by: 180)
-turtle.forward(steps: 20 * scale)
-
+turtle.forward(steps: 50 * scale)
 turtle.right(by: 90)
 turtle.forward(steps: 12 * scale-2)
 turtle.right(by: 90)
@@ -300,23 +299,46 @@ turtle.penDown()
 
     
 //Draw the second line
-for i in 1...2{
+for i in 1...5{
         FINAAL()
         
 //2.Get into position to draw the next shape
     turtle.penUp()
     turtle.forward(steps: 4 * scale)
     }
+
+//Correct position for third line
+
+turtle.right(by: 180)
+turtle.forward(steps: 50 * scale)
+turtle.right(by: 90)
+turtle.forward(steps: 12 * scale-2)
+turtle.right(by: 90)
+turtle.penDown()
+
+//Draw the third line
+for i in 1...5{
+        FINAAL()
+        
+//2.Get into position to draw the next shape
+    turtle.penUp()
+    turtle.forward(steps: 4 * scale)
+    
+    
+
+        
+    }
         
 
 
+//Where is the turtle?
+turtle.currentPosition()
 
-
-}
-FINALFUNC()
 
 canvas.highPerformance=false
 
+
+turtle.copySVGToClipboard()
 
 
 
@@ -368,3 +390,4 @@ canvas.highPerformance=false
  
  ![source_control](source-control.png "Source Control")
  */
+}
