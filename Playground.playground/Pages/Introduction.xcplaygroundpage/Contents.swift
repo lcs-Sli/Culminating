@@ -334,7 +334,7 @@ for i in 1...8{
     turtle.penDown()
 
     //Draw the forth line
-for i in 1...8{
+for _ in 1...8{
             FINAAL()
             
     //2.Get into position to draw the next shape
@@ -351,7 +351,7 @@ for i in 1...8{
     turtle.penDown()
 
     //Draw the fifth line
-for i in 1...8{
+for _ in 1...8{
             FINAAL()
             
     //2.Get into position to draw the next shape
@@ -368,7 +368,7 @@ for i in 1...8{
     turtle.penDown()
 
 //Draw the sixth line
-for i in 1...8{
+for _ in 1...8{
             FINAAL()
             
 //2.Get into position to draw the next shape
@@ -385,7 +385,7 @@ for i in 1...8{
     turtle.penDown()
 
 //Draw the seventh line
-for i in 1...8{
+for _ in 1...8{
             FINAAL()
             
 //2.Get into position to draw the next shape
