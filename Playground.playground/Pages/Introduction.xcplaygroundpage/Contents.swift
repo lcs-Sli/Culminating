@@ -37,7 +37,7 @@ canvas.drawAxes(withScale: true, by: 20, color: .black)
 
 
 //Set Scale
-let scale = 10
+let scale = 6
 canvas.highPerformance=true
 //FUNCTIONS
 //Draw one shape
@@ -201,7 +201,7 @@ turtle.forward(steps: 1 * scale)
 //Up 1
 turtle.left(by: 90)
 turtle.forward(steps: 1 * scale)
-turtle.drawSelf()
+//turtle.drawSelf()
 turtle.currentPosition()
 turtle.currentHeading()
 }
@@ -280,18 +280,18 @@ Shape()
     turtle.penDown()
 }
 
-for i in 1...5{
+for i in 1...8{
     FINAAL()
     
 //2.Get into position to draw the next shape
 turtle.penUp()
 turtle.forward(steps: 4 * scale)
 }
+
     
 //Correct position for second line
-
 turtle.right(by: 180)
-turtle.forward(steps: 50 * scale)
+turtle.forward(steps: 80 * scale)
 turtle.right(by: 90)
 turtle.forward(steps: 12 * scale-2)
 turtle.right(by: 90)
@@ -299,7 +299,7 @@ turtle.penDown()
 
     
 //Draw the second line
-for i in 1...5{
+for i in 1...8{
         FINAAL()
         
 //2.Get into position to draw the next shape
@@ -307,47 +307,97 @@ for i in 1...5{
     turtle.forward(steps: 4 * scale)
     }
 
-//Correct position for third line
 
+//Correct position for third line
 turtle.right(by: 180)
-turtle.forward(steps: 50 * scale)
+turtle.forward(steps: 80 * scale)
 turtle.right(by: 90)
 turtle.forward(steps: 12 * scale-2)
 turtle.right(by: 90)
 turtle.penDown()
 
 //Draw the third line
-for i in 1...5{
+for i in 1...8{
         FINAAL()
         
 //2.Get into position to draw the next shape
     turtle.penUp()
     turtle.forward(steps: 4 * scale)
 }
+
+
+//Correct position for forth line
     turtle.right(by: 180)
-    turtle.forward(steps: 50 * scale)
+    turtle.forward(steps: 80 * scale)
     turtle.right(by: 90)
     turtle.forward(steps: 12 * scale-2)
     turtle.right(by: 90)
     turtle.penDown()
 
-    //Draw the third line
-for i in 1...5{
+    //Draw the forth line
+for i in 1...8{
             FINAAL()
             
     //2.Get into position to draw the next shape
         turtle.penUp()
         turtle.forward(steps: 4 * scale)
 }
-        
 
+//Correct position for fifth line
+    turtle.right(by: 180)
+    turtle.forward(steps: 80 * scale)
+    turtle.right(by: 90)
+    turtle.forward(steps: 12 * scale-2)
+    turtle.right(by: 90)
+    turtle.penDown()
+
+    //Draw the fifth line
+for i in 1...8{
+            FINAAL()
+            
+    //2.Get into position to draw the next shape
+        turtle.penUp()
+        turtle.forward(steps: 4 * scale)
+}
+
+//Correct position for sixth line
+    turtle.right(by: 180)
+    turtle.forward(steps: 80 * scale)
+    turtle.right(by: 90)
+    turtle.forward(steps: 12 * scale-2)
+    turtle.right(by: 90)
+    turtle.penDown()
+
+//Draw the sixth line
+for i in 1...8{
+            FINAAL()
+            
+//2.Get into position to draw the next shape
+        turtle.penUp()
+        turtle.forward(steps: 4 * scale)
+}
+
+//Correct position for seventh line
+    turtle.right(by: 180)
+    turtle.forward(steps: 80 * scale)
+    turtle.right(by: 90)
+    turtle.forward(steps: 12 * scale-2)
+    turtle.right(by: 90)
+    turtle.penDown()
+
+//Draw the seventh line
+for i in 1...8{
+            FINAAL()
+            
+//2.Get into position to draw the next shape
+        turtle.penUp()
+        turtle.forward(steps: 4 * scale)
+}
 
 //Where is the turtle?
 turtle.currentPosition()
 
-
 canvas.highPerformance=false
-
 
 turtle.copySVGToClipboard()
 
