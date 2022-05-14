@@ -33,30 +33,27 @@ let turtle = Tortoise(drawingUpon: canvas)
 
 
 //Draw a grid
-canvas.drawAxes(withScale: true, by: 20, color: .black)
+//canvas.drawAxes(withScale: true, by: 20, color: .black)
 
 
 //Set Scale
 let scale = 6
 canvas.highPerformance=true
-//FUNCTIONS
+
+
 //Draw one shape
 //Where are we
 turtle.currentPosition()
 turtle.currentHeading()
 //turtle.drawSelf()
 
-
-//Move to the right position
+//Move to the right position (from origin)
 turtle.penUp() //So it doesn't draw a line
 turtle.forward(steps: 4 * scale)
 turtle.left(by: 90)
 turtle.forward(steps: 6 * scale)
 turtle.right(by: 90)
 turtle.penDown()
-
-turtle.currentPosition()
-turtle.currentHeading()
 
 //Where is the turtle?
 turtle.currentPosition()
@@ -279,14 +276,13 @@ Shape()
     turtle.penDown()
 }
 
-for i in 1...8{
+for _ in 1...8{
     FINAAL()
     
 //2.Get into position to draw the next shape
 turtle.penUp()
 turtle.forward(steps: 4 * scale)
 }
-
     
 //Correct position for second line
 turtle.right(by: 180)
@@ -295,17 +291,15 @@ turtle.right(by: 90)
 turtle.forward(steps: 12 * scale-2)
 turtle.right(by: 90)
 turtle.penDown()
-
     
 //Draw the second line
-for i in 1...8{
+for _ in 1...8{
         FINAAL()
         
 //2.Get into position to draw the next shape
     turtle.penUp()
     turtle.forward(steps: 4 * scale)
     }
-
 
 //Correct position for third line
 turtle.right(by: 180)
@@ -316,14 +310,13 @@ turtle.right(by: 90)
 turtle.penDown()
 
 //Draw the third line
-for i in 1...8{
+for _ in 1...8{
         FINAAL()
         
 //2.Get into position to draw the next shape
     turtle.penUp()
     turtle.forward(steps: 4 * scale)
 }
-
 
 //Correct position for forth line
     turtle.right(by: 180)
